@@ -231,8 +231,9 @@ a {
 }
 
 .btn-inverse:hover {
-  background-color: #000000;
+  background-color: transparent;
   color: #fff;
+  border: 2px solid #fff;
 }
 
 
@@ -942,7 +943,7 @@ a {
     font-size: 0.7rem;
   }
   .promo-main {
-    font-size: 4.25rem;
+    font-size: 4.5rem;
   }
 
   /* Newsletter */
@@ -1039,6 +1040,7 @@ a {
   }
 
   .logo-mobile {
+    display: block;
     font-size: 1.5rem;
     font-weight: 700;
   }
