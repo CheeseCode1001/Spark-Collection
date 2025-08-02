@@ -683,7 +683,7 @@ a {
 .newsletter h2 {
   font-size: clamp(2.5rem, 8vw, 5.5rem);
   font-weight: 800;
-  letter-spacing: -2px;
+  letter-spacing: -5px;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -924,7 +924,7 @@ a {
     font-size: clamp(2rem, 14vw, 15rem);
     letter-spacing: -3px;
     margin-bottom: 1.5rem;
-    margin-left: 40px;
+    margin-left: 20px;
   }
   .category-list a {
     font-size: 1.7rem;
@@ -942,14 +942,14 @@ a {
     font-size: 0.7rem;
   }
   .promo-main {
-    font-size: 4.1rem;
+    font-size: 4.25rem;
   }
 
   /* Newsletter */
   .newsletter h2 {
     font-size: clamp(2.5rem, 14vw, 20rem);
     font-weight: 800;
-    letter-spacing: -2px;
+    letter-spacing: -5px;
     line-height: 1;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -962,7 +962,7 @@ a {
     gap: 2rem;
   }
   .newsletter-form input {
-    width: 340px;
+    width: 100%;
     }
     .btn-primary {
       width: 100%;
