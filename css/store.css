@@ -22,7 +22,7 @@
 
 @media (max-width: 480px) {
  .shop-container h1 {
-    font-size: clamp(2.5rem, 23vw, 20rem);
+    font-size: clamp(2.5rem, 24vw, 20rem);
      letter-spacing: -5px;
      line-height: 1;
      margin-bottom: 30px;
