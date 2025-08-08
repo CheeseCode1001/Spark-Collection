@@ -16,15 +16,635 @@
     line-height: 1;
 }
 
-.product-card-btn{
+.product-card-btn {
     width: 100%;
 }
 
 @media (max-width: 480px) {
- .shop-container h1 {
-    font-size: clamp(2.5rem, 24vw, 20rem);
-     letter-spacing: -5px;
-     line-height: 1;
-     margin-bottom: 30px;
- }
+    .shop-container h1 {
+        font-size: clamp(2.5rem, 24vw, 20rem);
+        letter-spacing: -5px;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+    .contact-image {
+        width: 100%;
+        height: 100%;
+    }
+    .contact-form-container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.carousel-track .spark-star {
+    width: 130px;
+    align-self: center;
+    justify-self: center;
+    height: 130px;
+    margin: 0 4rem 0 0;
+
+}
+.contact-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container h1 {
+    font-size: clamp(2.5rem, 14vw, 20rem);
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    line-height: 1;
+}
+
+/* Contact Section */
+.contact-section {
+    /* padding: 5rem 0; */
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.contact-image {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Text Carousel */
+.text-carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 3rem 0;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    pointer-events: none;
+    user-select: none;
+}
+
+.text-carousel .carousel-track {
+    display: flex;
+    position: absolute;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+    width: max-content;
+    will-change: transform;
+}
+
+.text-carousel .carousel-slide {
+    font-size: clamp(4rem, 10vw, 12rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 4rem 0 0;
+    color: #000000;
+    letter-spacing: -4px;
+    line-height: 1;
+    display: inline-block;
+    white-space: nowrap;
+    /* -webkit-text-stroke: 1px #000;
+    -webkit-text-fill-color: transparent; */
+    opacity: 0.9;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% + 100vw));
+    }
+}
+
+/* Contact Form */
+.contact-form-container {
+    width: 50%;
+    height: 100%;
+    padding: 2.5rem;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group label {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    color: #999;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label,
+.form-group textarea:focus+label,
+.form-group textarea:not(:placeholder-shown)+label {
+    top: -1.2rem;
+    font-size: 0.8rem;
+    color: #000;
+}
+
+/* Collections Page Styles */
+.collections-hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+}
+
+.collections-hero h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.3em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.collections-hero h2 {
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.collections-hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+/* Featured Categories */
+.featured-categories {
+    padding: 5rem 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: #333;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.05);
+}
+
+.category-card h3 {
+    margin: 1.5rem 0 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.btn-text {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.btn-text:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.btn-text:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Lookbook Section */
+.lookbook {
+    padding: 5rem 0;
+}
+
+.lookbook-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.lookbook-item {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.lookbook-item.large {
+    grid-row: span 2;
+}
+
+.lookbook-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.lookbook-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 2rem;
+    text-align: center;
+}
+
+.lookbook-item:hover .lookbook-overlay {
+    opacity: 1;
+}
+
+.lookbook-item:hover img {
+    transform: scale(1.05);
+}
+
+.lookbook-overlay h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.lookbook-item:hover .lookbook-overlay h3 {
+    transform: translateY(0);
+}
+
+/* Buttons */
+
+
+.btn-outline {
+    display: inline-block;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: #000;
+}
+
+/* 
+.btn-secondary {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+    margin-top: 1.5rem;
+}
+
+.btn-secondary:hover {
+    background-color: transparent;
+    color: #333;
+} */
+
+/* Featured Collection */
+.featured-collection {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/featured-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 8rem 1rem;
+    margin: 5rem 0;
+}
+
+.featured-collection h2 {
+    font-size: clamp(2rem, 10vw, 10rem);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    line-height: 1;
+}
+
+.featured-collection p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Instagram Feed */
+.instagram-feed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    padding: 6rem 0;
+    text-align: left;
+    color: #ffffff;
+}
+
+.section-header {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.section-header h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.section-header h1 {
+    font-size: clamp(2rem, 9vw, 10rem);
+    letter-spacing: -5px;
+    line-height: 1;
+    margin-bottom: -1rem;
+    margin-top: 5rem;
+    text-transform: uppercase;
+}
+
+.divider {
+    width: 50px;
+    height: 1px;
+    background: #ffffff;
+    border: none;
+    margin: 0 15px;
+}
+
+.section-title {
+    font-size: 5.5rem;
+    letter-spacing: -3px;
+    text-align: left;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.instagram-overlay .material-icons {
+    font-size: 2.5rem;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.instagram-item:hover .instagram-overlay {
+    opacity: 1;
+}
+
+.instagram-item:hover .instagram-overlay .material-icons {
+    transform: scale(1.1);
+}
+
+.instagram-item:hover img {
+    transform: scale(1.1);
+}
+
+.follow-button-container {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.follow-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.follow-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.follow-button:hover {
+    color: #000;
+}
+
+.follow-button:hover:before {
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .instagram-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .section-header {
+        flex-direction: column;
+    }
+
+    .divider {
+        width: 100px;
+        margin: 10px 0;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .lookbook-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .lookbook-item.large {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .collections-hero {
+        min-height: 500px;
+        padding: 4rem 1rem;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lookbook-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lookbook-item.large {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .instagram-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .collections-hero h1 {
+        font-size: 1.2rem;
+    }
+
+    .collections-hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .instagram-grid {
+        grid-template-columns: 1fr;
+    }
 }

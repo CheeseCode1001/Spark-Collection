@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CSS STYlE -->
+      <link rel="stylesheet" href="/css/module.css" />
+      <!-- Google Fonts & Icons -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+      />
+      <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
+    <title>Document</title>
+</head>
+<body>
+      <!-- SECTION: Header Start -->
+      <header class="header" id="header">
+        <div class="container nav-container">
+          <a href="/index.html" class="logo">Spark-Collection</a>
+          <nav class="nav" id="nav-menu">
+            <!-- Mobile top bar -->
+            <div class="nav-mobile-top">
+              <a href="/index.html" class="logo logo-mobile">Spark-Collection</a>
+              <button class="cancel-btn" id="nav-cancel" aria-label="Close">
+                <span class="material-icons">close</span>
+              </button>
+            </div>
+            <ul class="nav-list">
+              <li><a href="/html/shop.html">Store</a></li>
+              <li><a href="/html/collections.html">Collections</a></li>
+              <img src="/assets/sparkstar.png" alt="" class="sparkstar">
+              <li><a href="/html/about.html">About</a></li>
+              <li><a href="/html/knock-knock.html">Knock Knock</a></li>
+            </ul>
+          </nav>
+          <div class="nav-icons">
+            <button class="icon-btn" aria-label="Search">
+              <span class="material-icons">search</span>
+            </button>
+            <button class="icon-btn" aria-label="Cart">
+              <span class="material-icons">shopping_bag</span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- SECTION: Header End -->
+
+      <!-- Hero Section -->
+      <section class="hero" style="background-image:url('/assets/sparkhero1.jpeg');">
+        <div class="overlay">
+            <div class="hero-content">
+              <h1 class="hero-headline">EXPERIENCE THE LATEST COLLECTIONS</h1>
+              <div class="editor-picks">
+                <h3 class="editor-heading">NEW DROPS</h3>
+                <p class="editor-desc">Discover the latest collections from your local creators across design, music and beyond.</p>
+                <a href="#shop" class="btn-inverse">EXPLORE</a>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- SECTION: Lookbook Start -->
+  <section class="section lookbook">
+    <div class="container">
+      <h2 class="section-title">Dopest collections</h2>
+      <div class="lookbook-grid">
+        <!-- Row 1: three small tiles -->
+        <article class="lookbook-item">
+          <img src="/assets/spark11.jpeg" alt="Oversized Tee" />
+          <div class="lookbook-caption">
+            <h4>NIKE SPORTSWEAR</h4>
+            <p class="item-desc">TEE – PRINTED</p>
+            <span class="price">$32,15</span>
+          </div>
+        </article>
+        <article class="lookbook-item">
+          <img src="/assets/spark16.jpeg" alt="Basic Tee" />
+          <div class="lookbook-caption">
+            <h4>NIKE SPORTSWEAR</h4>
+            <p class="item-desc">T-SHIRT BASIC</p>
+            <span class="price">$33,81</span>
+          </div>
+        </article>
+        <article class="lookbook-item">
+          <img src="/assets/spark14.jpeg" alt="Signature Tee" />
+          <div class="lookbook-caption">
+            <h4>KARL KANI</h4>
+            <p class="item-desc">SMALL SIGNATURE UNISEX</p>
+            <span class="price">$33,76</span>
+          </div>
+        </article>
+        <!-- Row 2: tall tile (left) and wide tile (right) -->
+        <article class="lookbook-item tall">
+          <img src="/assets/spark12.jpeg" alt="Jordan Shirt" />
+          <div class="lookbook-caption">
+            <h4>JORDAN</h4>
+            <p class="item-desc">SHIRT AJ</p>
+            <span class="price">$51,87</span>
+          </div>
+        </article>
+        <article class="lookbook-item wide">
+          <img src="/assets/spark6.jpeg" alt="Bowling Unisex" />
+          <div class="lookbook-caption">
+            <h4>GCDS</h4>
+            <p class="item-desc">BOWLING UNISEX</p>
+            <span class="price">$329,29</span>
+          </div>
+        </article>
+        <!-- Row 3: three small tiles -->
+        <article class="lookbook-item">
+          <img src="/assets/spark17.jpeg" alt="Wano" />
+          <div class="lookbook-caption">
+            <h4>GCDS</h4>
+            <p class="item-desc">ONE PIECE WANO</p>
+            <span class="price">$229,29</span>
+          </div>
+        </article>
+        <article class="lookbook-item">
+          <img src="/assets/spark5.jpeg" alt="Overshirt" />
+          <div class="lookbook-caption">
+            <h4>SPARK</h4>
+            <p class="item-desc">TWILL OVERSHIRT</p>
+            <span class="price">$79,00</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION: Lookbook End -->
+
+  <!-- SECTION: Categories Start -->
+  <section class="section categories" id="collections">
+    <div class="container">
+      <h2 class="section-title align-left">CATEGORIES</h2>
+      <ul class="category-list">
+        <li><a href="#">CLOTHES /</a></li>
+        <li><a href="#">SHOES /</a></li>
+        <li><a href="#">BAGS /</a></li>
+        <li><a href="#">ACCESSORIES /</a></li>
+      </ul>
+    </div>
+  </section>
+  <!-- SECTION: Categories End -->
+
+      <!-- Featured Collection -->
+      <section class="featured-collection" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/sparkhero2.jpeg') no-repeat center center/cover;">
+        <div class="container">
+          <div class="featured-content">
+            <h2>THE URBAN COLLECTION</h2>
+            <p>Discover our latest streetwear collection featuring bold designs and premium quality materials.</p>
+            <a href="#" class="btn btn-secondary">SHOP THE COLLECTION</a>
+          </div>
+        </div>
+      </section>
+
+        <!-- SECTION: Promo Banner Start -->
+  <section class="promo-banner" style="margin-top: -5rem;">
+    <div class="container promo-wrapper">
+      <div class="promo-row promo-top">
+        <span>NEVER AN AFTER THIRST</span>
+        <span>WHEN TASTE GROWS UP — SQUIRT GROWS UP</span>
+        <span>SWITCH FROM SWEET TO THIRST</span>
+      </div>
+
+      <h2 class="promo-main">Street&nbsp;<br><span>Collections</span></h2>
+
+      <div class="promo-row promo-bottom">
+        <span>• Puts out Thirst</span>
+        <span>The Quality Soft Drink — Squirt</span>
+        <span>1950's&nbsp;&nbsp;&nbsp;For Grownup Tastes</span>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION: Promo Banner End -->
+
+  <!-- SECTION: Image Carousel Start -->
+  <section class="image-carousel">
+    <div class="carousel-track">
+      <img src="/assets/spark5.jpeg" alt="Look 1" />
+      <img src="/assets/spark6.jpeg" alt="Look 2" />
+      <img src="/assets/spark7.jpeg" alt="Look 3" />
+      <img src="/assets/spark8.jpeg" alt="Look 4" />
+      <img src="/assets/spark9.jpeg" alt="Look 5" />
+      <img src="/assets/spark10.jpeg" alt="Look 6" />
+      <img src="/assets/spark11.jpeg" alt="Look 7" />
+      <img src="/assets/spark12.jpeg" alt="Look 8" />
+      <!-- Duplicate set for seamless loop -->
+      <img src="/assets/spark5.jpeg" alt="Look 1 duplicate" aria-hidden="true" />
+      <img src="/assets/spark6.jpeg" alt="Look 2 duplicate" aria-hidden="true" />
+      <img src="/assets/spark7.jpeg" alt="Look 3 duplicate" aria-hidden="true" />
+      <img src="/assets/spark8.jpeg" alt="Look 4 duplicate" aria-hidden="true" />
+      <img src="/assets/spark9.jpeg" alt="Look 5 duplicate" aria-hidden="true" />
+      <img src="/assets/spark10.jpeg" alt="Look 6 duplicate" aria-hidden="true" />
+      <img src="/assets/spark11.jpeg" alt="Look 7 duplicate" aria-hidden="true" />
+      <img src="/assets/spark12.jpeg" alt="Look 8 duplicate" aria-hidden="true" />
+    </div>
+  </section>
+  <!-- SECTION: Image Carousel End -->
+
+      <!-- Instagram Feed -->
+      <section class="instagram-feed">
+        <div class="">
+          <div class="section-header"> 
+            <h2 class="">FOLLOW US <span> <i class="material-icons">favorite</i> </span></h2>
+            <p>Follow us on Instagram for the latest updates and exclusive offers.</p>
+        
+            <div class="divider"></div>
+            <h1 class="section-title">@spark.collection</h1>
+          </div>
+        </div>
+      </section>
+
+    <!-- SECTION: Newsletter Start -->
+    <section class="newsletter" id="about">
+        <div class="container newsletter-box">
+          <h2>Join the Movement</h2>
+          <p>Subscribe &amp; get 10% off your first order.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" class="btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+      <!-- SECTION: Newsletter End -->
+  
+      <!-- SECTION: Footer Start -->
+      <footer class="footer" id="contact">
+        <div class="container footer-grid">
+          <div class="footer-brand">
+            <h3>Spark</h3>
+            <p>© 2025 Spark Collection.<br />All rights reserved.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#shop">All Products</a></li>
+              <li><a href="#collections">Collections</a></li>
+              <li><a href="#">Gift Cards</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Connect</h4>
+            <div class="socials">
+              <a href="#">Instagram</a>
+              <a href="#">Twitter</a>
+              <a href="#">TikTok</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-large-text">
+          SPARK.<br class="footer-br" />COLLECTION
+        </div>
+      </footer>
+      <!-- SECTION: Footer End -->
+  
+      <!-- SECTION: Scripts Start -->
+      <script>
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("nav-menu");
+        const navCancel = document.getElementById("nav-cancel");
+  
+        // Toggle via hamburger
+        hamburger.addEventListener("click", () => {
+          navMenu.classList.toggle("open");
+          hamburger.classList.toggle("open");
+        });
+  
+        // Close via cancel button
+        if (navCancel) {
+          navCancel.addEventListener("click", () => {
+            navMenu.classList.remove("open");
+            hamburger.classList.remove("open");
+          });
+        }
+      </script>
+      <!-- SECTION: Scripts End -->
+</body>
+</html>
